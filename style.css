@@ -1,0 +1,130 @@
+html, 
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* Header */
+header {
+    width: 100%;
+    height: 85px;
+    background: #FFFFFF;
+    font-weight: 600;
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+}
+
+header h1 {
+    margin-left: 60px;
+    font-weight: bold;
+}
+
+/* Navigation */
+
+nav ul {
+    display: flex;
+}
+
+nav a {
+
+    color: #090909;
+    text-decoration: none;
+   
+}
+
+nav li {
+    margin-right: 50px;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    display: inline-block;
+}
+
+/* Section 1 */
+
+.section-one {
+    background-image: url(images/image13.jpg);
+    color: #FFFFFF;
+    width: 100%;
+    height: 550px;
+    background-size: cover;
+    display: grid;
+    grid-template: 250px auto/ 3em auto 2em;
+}
+
+.detail{
+    grid-column: 2;
+    grid-row: 2;
+    text-shadow: 2px 2px 5px black;
+}
+/* Memory Grid */
+
+.memories {
+    
+    margin: 50px 50px;
+}
+
+img{
+    max-width: 100%;
+}
+
+section h2 {
+    font-size: 1.5em;
+}
+
+.view-more {
+    text-align: center;
+    text-decoration: underline;
+    font-size: 1em;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+/* Footer */
+
+footer {
+    font-size: 0.75em;
+    color: #FFFFFF;
+    background: #202020;
+    width: 100%;
+    height: 105px;
+    line-height: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+@media (min-width:760px) {
+
+    .section-one {
+        background-image: url(images/image13.jpg);
+        color: #FFFFFF;
+        width: 100%;
+        height: 550px;
+        background-size: cover;
+        display: grid;
+        grid-template: 300px 200px/ 3em 700px auto;
+    }
+    
+    .detail{
+        grid-column: 2;
+        grid-row: 2;
+        text-shadow: 2px 2px 5px black;
+    }
+
+    .memories {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 3em;
+        margin: 50px 100px 20px 100px;
+    }
+    
+}
